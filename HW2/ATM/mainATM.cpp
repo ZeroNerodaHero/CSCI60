@@ -23,6 +23,7 @@ int main(){
     cout << "" <<endl;
     cout << "TESTING GETCASH" <<endl;
     b=atm1.get_cash(10000,b);
+    b=atm1.get_cash(10001,b);
     cout << b << endl;
     cout << endl;
 

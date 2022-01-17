@@ -18,6 +18,7 @@ int main(){
     cout << r1 << "+=" << r3 << "=>";r1+=r3; cout<<r1<< endl;
     r2=Rational(4,10);
     cout << r2 << "*=" << r3 << "=>";r2*=r3; cout<<r2<< endl;
+    r1 = Rational(12,3);
     cout << r1 << "+" << r3 << "=" << (r1+r3)<< endl;
     cout << r1 << "*" << r3 << "=" << (r1*r3)<< endl;
 }

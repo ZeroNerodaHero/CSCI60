@@ -1,6 +1,0 @@
-to get the lowest form, you would have to find the gcd of the two integers. so write a gcd function.
-gcd(a,b)
-    if(b == 0) return a 
-    return gcd(b,a%b);
-
-divide the numer and denom by the gcd

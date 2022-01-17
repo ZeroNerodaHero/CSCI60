@@ -4,7 +4,7 @@
 
 BankAccount ATM::get_cash(int amount, BankAccount b){
     if(amount%10!=0){
-        std::cout <<"Cannot give $" << amount%10 << std::endl;
+        std::cout <<"Cannot give less than $10bill"<< std::endl;
         return BankAccount();
     }
     if(amount > total){
