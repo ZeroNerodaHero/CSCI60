@@ -15,6 +15,7 @@ Balance: 10
 
 TESTING GETCASH
 ATM doesn't have enough money
+Cannot give less than $10bill
 Name: 
 Account number: -1
 Balance: 0
