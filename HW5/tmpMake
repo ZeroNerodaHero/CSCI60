@@ -1,0 +1,2 @@
+make: dSet.h dSet.cpp dUSet.h dUSet.cpp dynamicbag.cpp dynamicbag.h main.cpp
+	 g++ dSet.h dSet.cpp dUSet.cpp dUSet.h dynamicbag.cpp dynamicbag.h main.cpp
