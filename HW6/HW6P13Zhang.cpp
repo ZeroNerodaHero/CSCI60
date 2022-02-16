@@ -1,18 +1,26 @@
 #include <iostream>
 using namespace std;
 
+//PART 1
 template<typename T>
+//Pre: valid parameters
+//Post: returns + difference
 //in order for abs to run, it needs to 
 //support (-) and (>)
 T abs(T a, T b){
     return (a-b > b-a) ? a-b : b-a;
 }
 
+//PART 3
 template<typename T1>
+//Pre: valid array
+//Post: return most frequent element
+//returns the first thing in the list if none
+//
 //in order to support this function, you need
 // a == operator only
-//returns the first thing in the list if none
 T1 frequent(T1 a[], std::size_t size){
+    //visited array
     bool v[size]; 
     int cnt = 0;
     T1 ret = a[0];
@@ -26,6 +34,7 @@ T1 frequent(T1 a[], std::size_t size){
         for(int j = i+1; j < size; j++){
             if(a[i] == a[j]){
                tmpCnt++; 
+                //if visited never touch again
                 v[j] = 1;
             }
         }
@@ -72,5 +81,8 @@ int main(){
     string tstr[6] = {"a","a","a","b","b","c"};
     print(tstr,6); 
     cout << "tstr freq: " << frequent(tstr,6) << endl;
+    string tstr2[8] = {"a","a","a","b","b","c","b","b"};
+    print(tstr2,8); 
+    cout << "tstr freq: " << frequent(tstr2,8) << endl;
 }
 
